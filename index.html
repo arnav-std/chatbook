@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WhatsApp Chat Book</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="background-canvas">
+    <div class="navbar">
+      <button class="hamburger">☰</button>
+      <h1>ChatBook</h1>
+    </div>
+
+    <div id="offcanvas" class="offcanvas">
+      <div id="authArea">
+        <!-- Login/Logout button will be injected here -->
+      </div>
+    </div>
+
+    <div class="main-content">
+      <h2>ChatBook transforms your favourite WhatsApp chats into a beautiful printed book.</h2>
+      <div class="buttons">
+        <button onclick="goToPage('mychats')">My Chats</button>
+        <p id="warningMyChats" class="warning"></p>
+        <button onclick="goToPage('upload')">Upload a new chat</button>
+        <p id="warningUpload" class="warning"></p>
+        <p style="text-align: center; font-size: 16px; color: #333;">
+         How to upload chat? 
+         <a href="guide/guide.html" style="color: #00a3c8; text-decoration: underline;">
+          Click here
+         </a>
+         </p>
+      </div>
+    </div>
+  </div>
+
+  <canvas id="bgCanvas"></canvas>
+  <script src="firebase-config.js" type="module"></script> <!-- Added type="module" -->
+  <script src="script.js" type="module"></script> <!-- Added type="module" -->
+</body>
+</html>

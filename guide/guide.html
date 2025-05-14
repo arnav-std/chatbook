@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="guide.css">
+</head>
+<body>
+  <canvas id="bgCanvas"></canvas>
+
+  <div class="guide-container" id="guideContainer">
+    <button class="close-btn" onclick="goBack()">✕</button>
+
+    <div class="slider" id="slider">
+      <div class="slide active">Welcome to Chat Book! This app transforms your memorable WhatsApp conversations into beautiful, shareable digital books. Whether it's heartfelt chats, funny moments, or meaningful messages, Chat Book helps you preserve and relive those conversations in a timeless format. Start your journey by exploring how it all works! Swipe to get started.<br><br>चैट बुक में आपका स्वागत है! यह ऐप आपकी यादगार व्हाट्सएप बातचीतों को खूबसूरत, साझा करने योग्य डिजिटल किताबों में बदल देता है। चाहे वह दिल से की गई बातें हों, मजेदार पल हों, या महत्वपूर्ण संदेश हों, चैट बुक आपकी उन बातचीतों को एक कालातीत प्रारूप में संरक्षित और पुनः जीने में मदद करता है। जानें कि यह कैसे काम करता है और अपनी यात्रा शुरू करें! प्रारंभ करने के लिए स्वाइप करें।</div>
+      <div class="slide">
+       <div class="step-text">
+         Open WhatsApp and click on the chat you want to turn into a book.<br>
+         <br>व्हाट्सएप खोलें और उस चैट पर क्लिक करें जिसे आप किताब में बदलना चाहते हैं।
+   </div>
+     <img src="images/step1.png" alt="Open WhatsApp Chat" class="step-image" />
+   </div>
+    <div class="slide">
+     <div class="step-text">
+       Tap on three dots on the upper right corner and then click on "More".<br>
+       <br>ऊपरी दाएं कोने में तीन बिंदुओं पर टैप करें और फिर "अधिक" पर क्लिक करें।
+     </div>
+       <img src="images/step2.png" alt="Open WhatsApp Chat" class="step-image" />
+    </div>
+      <div class="slide">
+     <div class="step-text">
+       Now tap on "Export Chat".<br>
+       <br>अब "चैट निर्यात करें" पर टैप करें।
+     </div>
+       <img src="images/step3.png" alt="Open WhatsApp Chat" class="step-image" />
+    </div>
+      <div class="slide">
+     <div class="step-text">
+       Now select "Include Media" or "Without Media" however you want to export.<br>
+       <br>अब "मीडिया शामिल करें" या "बिना मीडिया" का चयन करें, जैसा आप निर्यात करना चाहते हैं।
+     </div>
+       <img src="images/step4.png" alt="Open WhatsApp Chat" class="step-image" />
+    </div>
+      <div class="slide">
+       <div class="step-text">
+       Now select the WhatsApp Chat Book app from the list.<br>
+       <br>अब सूची से व्हाट्सएप चैट बुक एप चुनें।
+     </div>
+       <img src="images/step5.png" alt="Open WhatsApp Chat" class="step-image" />
+    </div>
+    </div>
+
+    <div class="navigation">
+      <button class="nav left" onclick="prevSlide()">❮</button>
+      <div class="dots" id="dots"></div>
+      <button class="nav right" onclick="nextSlide()">❯</button>
+    </div>
+  </div>
+
+  <script src="guide.js" type="module"></script>
+</body>
+</html>

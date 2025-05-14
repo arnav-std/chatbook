@@ -1,0 +1,115 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100%;
+}
+
+#bgCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.guide-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 20px;
+  background-color: #ffffffb0;
+  box-sizing: border-box;
+}
+
+.close-btn {
+  align-self: flex-end;
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  color: #00a3c8;
+  cursor: pointer;
+}
+
+.slider {
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slide {
+  display: none;
+  width: 100%;
+  font-size: 16px;
+  color: #333;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.slide.active {
+  display: block;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.nav {
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #00a3c8;
+  cursor: pointer;
+}
+
+.dots {
+  display: flex;
+  gap: 6px;
+}
+
+.dots span {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.dots span.active {
+  background-color: #00a3c8;
+}
+
+/* Responsive text for larger screens */
+@media (min-width: 600px) {
+  .slide {
+    font-size: 18px;
+    padding: 40px;
+  }
+}
+.step-text {
+  font-size: 18px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.step-image {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
