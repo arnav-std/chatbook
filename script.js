@@ -66,12 +66,7 @@ window.goToPage = function (page) {
 
   if (!user) {
     // Show warning for the current button and clear the other
-    if (page === 'mychats') {
-      warningMyChats.textContent = "Login first";
-      warningUpload.textContent = "";
-    } else if (page === 'upload') {
-      warningUpload.textContent = "Login first";
-      warningMyChats.textContent = "";
+    
     }
   } else {
     // Clear all warnings and navigate
